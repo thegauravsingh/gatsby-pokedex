@@ -13,7 +13,7 @@
   </p>
 </h1>
 
-I started working on this project due to lack of better choices for REST API based starters.
+I started working on this project due to lack of better choices for REST API based starter kits.
 
 This starter helps you with the building custom source nodes as per REST API results in order to normalize your data for Gatsby Nodes API as well as main Gatsby configuration files, you might need to get up and running blazing fast.
 
