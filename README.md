@@ -1,4 +1,4 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+
 <p align="center">
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
@@ -13,13 +13,13 @@
   </p>
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+I started working on this project due to lack of better choices for REST API based starter kits.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+This starter helps you with the building custom source nodes as per REST API results in order to normalize your data for Gatsby Nodes API as well as main Gatsby configuration files, you might need to get up and running blazing fast.
 
 ## 🚀 Quick start
 
-1.  **Create A simple dynamic app based on pokemon rest api.**
+1.  **Create A simple dynamic Gatsby app based on pokemon rest api.**
 
     Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)) to create a new site, specifying the default starter.
 
@@ -46,7 +46,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     Open the `gatsby-pokedex` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 
-## 🧐 What's inside?
+## 🧐 What's inside a Gatsby project?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
@@ -74,7 +74,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
+6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
 
 7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
@@ -88,12 +88,12 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
-## 🎓 Learning Gatsby
+## 🎓 Wanna learn Gatsby?
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
+Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+- **For most developers, recommended start should be [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+- **To dive straight into code samples, head [to documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+
