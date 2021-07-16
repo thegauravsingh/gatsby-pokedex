@@ -28,7 +28,7 @@ This starter helps you with the building custom source nodes as per REST API res
     gatsby new gatsby-pokedex https://github.com/thegauravsingh/gatsby-pokedex
     ```
 
-1.  **Start developing.**
+1.  **Start developing...**
 
     Navigate into your new site’s directory and start it up.
 
