@@ -1,29 +1,84 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import React from "react";
+import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
+import { makeStyles } from '@material-ui/core/styles';
+import { Card,CardContent, CardMedia, CircularProgress} from '@material-ui/core';
+import {GatsbyImage ,getImage} from 'gatsby-plugin-image';
+import usePokemon from "../hooks/usePokemon";
 
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
-)
+const useStyles = makeStyles((theme) => ({
+
+  Card:{ 
+  },
+  CardMedia:{ margin: "auto", 
+  },
+  pokedexContainer:{
+    paddingTop:'20px',
+    paddingLeft:'20px',
+    paddingRight:'20px'
+  },
+  circularProgress:{
+    position: 'fixed',
+    top:'50%',  
+    left: '50%',
+  },
+}));
+
+const IndexPage = () => {
+  const classes = useStyles();
+  const allPokemon  = usePokemon();
+  const toFirstCharUppercase = (name) => (name.charAt(0).toUpperCase() + name.slice(1));
+  
+  const getPokedexCard = (pokemon) => {
+
+    const {id, name, types,sprite, image} = pokemon;
+    console.log(image);
+ 
+     return( <Grid item xs={12} sm={3} key = {id}>
+                    <Card className = {classes.CardMedia} >
+                      
+
+                      <CardMedia
+                            className={classes.CardMedia}
+                            style = {{width:"130px", height:"130px"} }
+                      >
+                        <GatsbyImage 
+                        image = {getImage(image)}
+                        alt = {`${toFirstCharUppercase(name)}`}
+                        /> 
+                      </CardMedia>        
+                                      
+                      {/*
+                      <CardMedia
+                            className={classes.CardMedia}
+                            image = {sprite}
+                            style = {{width:"130px", height:"130px"} }
+                      />
+                      */} 
+                   
+                      <CardContent className={classes.CardContent}> 
+                          <Typography>Types: {types.join(',')}  </Typography>
+                      </CardContent>
+                    </Card>
+              </Grid>
+      );
+   };
+
+  
+  return (
+  <>  
+    <div className={classes.root}>
+        {allPokemon?(
+          <Grid container spacing={3} className={classes.pokedexContainer}>
+             {allPokemon.map(pokemon => getPokedexCard(pokemon))}
+          </Grid>
+        ): (<CircularProgress className={classes.circularProgress}/>)
+      }
+      </div>
+  </>
+  )
+}
 
 export default IndexPage
+
