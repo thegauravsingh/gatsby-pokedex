@@ -44,7 +44,7 @@ const usePokemon = () => {
 
   });
 
-  console.log(allPokemon);
+  //console.log(allPokemon);
 
   return allPokemon;
 
