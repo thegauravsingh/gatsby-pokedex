@@ -36,7 +36,7 @@ const Layout = ({ children, ft }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `1rem 1.0875rem 1.45rem`
+          padding: `1rem 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
@@ -44,13 +44,13 @@ const Layout = ({ children, ft }) => {
       {(ft === "t" ? true : null) && (
         <footer
           style={{
-            position: "absolute",
+            position: "fixed",
             bottom: 0,
             width: "100vw",
             maxWidth: "100%",
             padding: 0,
             margin: 0,
-            backgroundColor: "#26a27b"
+            backgroundColor: "#26a27b",
           }}
         >
           <div
@@ -59,7 +59,7 @@ const Layout = ({ children, ft }) => {
               marginTop: "1em",
               color: "white",
               textDecoration: "none",
-              marginBottom: "1em"
+              marginBottom: "1em",
             }}
           >
             <a
@@ -68,10 +68,10 @@ const Layout = ({ children, ft }) => {
                 textDecoration: "none",
                 color: "#FFF",
                 paddingBottom: 3,
-                borderBottom: `1px solid white`
+                borderBottom: `1px solid white`,
               }}
             >
-            Gatsby Material-UI Demo via RESTful Pokémon API
+              Gatsby Material-UI Demo via RESTful Pokémon API
             </a>
           </div>
         </footer>
@@ -82,9 +82,9 @@ const Layout = ({ children, ft }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  ft: PropTypes.string.isRequired
+  ft: PropTypes.string.isRequired,
 }
 Layout.defaultProps = {
-  ft: "t"
+  ft: "t",
 }
 export default Layout
