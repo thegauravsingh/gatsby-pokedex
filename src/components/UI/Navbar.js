@@ -1,13 +1,13 @@
-import React, { useContext } from "react";
+import React, { useContext } from "react"
 //import { Link } from "gatsby";
-import AppBar from "@material-ui/core/AppBar";
-import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar"
+import { makeStyles } from "@material-ui/core/styles"
 //import { useTheme } from "@material-ui/core/styles";
-import Toolbar from "@material-ui/core/Toolbar";
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import Toolbar from "@material-ui/core/Toolbar"
+import Button from "@material-ui/core/Button"
+import Typography from "@material-ui/core/Typography"
 
-import { darkModeContext } from "./ThemeHandler";
+import { darkModeContext } from "./ThemeHandler"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -22,7 +22,6 @@ const useStyles = makeStyles(theme => ({
 }))
 
 export default function Navbar() {
-
   //const theme = useTheme()
   const classes = useStyles()
   const DarkModeContext = useContext(darkModeContext)
@@ -38,45 +37,23 @@ export default function Navbar() {
     }
   }
 
-
   return (
-    //<>
-    //  <CssBaseline />
-    //  <AppBar
-    //    color="primary"
-    //    elevation={0}
-    //    style={{ borderBottom: `1px solid ${theme.palette.secondary.main}` }}
-    //  >
-    //    <Toolbar>
-    //      <MuiLink
-    //        component={Link}
-    //        to="/"
-    //        color="inherit"
-    //        variant="h6"
-    //        underline="none"
-    //        className={classes.title}
-    //      >
-    //        Gatsby Pokedex
-    //      </MuiLink>
-    //    </Toolbar>
-    //  </AppBar>
-    //  <Toolbar />
-    //</>
     <div className={classes.root}>
-     <AppBar position="static">
-      <Toolbar>
-        <Typography variant="h6" className={classes.title}>
-          Gatsby Pokedex
-        </Typography>
-        <Button
-          variant="contained"
-          color="secondary"
-          size="medium"
-          onClick={handleThemeChange}
-        >  
-        Toggle {darkMode ? "Light" : "Dark"} Theme</Button>
-      </Toolbar>
-     </AppBar>
+      <AppBar position="fixed">
+        <Toolbar>
+          <Typography variant="h6" className={classes.title}>
+            Gatsby Pokedex
+          </Typography>
+          <Button
+            variant="contained"
+            color="secondary"
+            size="medium"
+            onClick={handleThemeChange}
+          >
+            Toggle {darkMode ? "Light" : "Dark"} Theme
+          </Button>
+        </Toolbar>
+      </AppBar>
     </div>
   )
 }
