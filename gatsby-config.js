@@ -21,12 +21,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-remote-images`,
       options: {
-        nodeType: 'Pokemon',
-        imagePath: 'sprites.front_default',
-        name: 'allPokemonImages'
+        nodeType: "Pokemon",
+        imagePath: "sprites.front_default",
+        name: "allPokemonImages",
       },
-    },  
-    'gatsby-theme-material-ui',
+    },
+    "gatsby-theme-material-ui",
     `gatsby-plugin-gatsby-cloud`,
     //{
     //  resolve: `gatsby-plugin-manifest`,
