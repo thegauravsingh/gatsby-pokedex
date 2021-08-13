@@ -1,4 +1,3 @@
-
 <p align="center">
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
@@ -12,10 +11,24 @@
   ( A simple Pokedex App) 
   </p>
 </h1>
+I started working on this project in order to try Gatsby and see performance gains are as good as they claim.
 
-I started working on this project due to lack of better choices for REST API based starter kits.
+This starter will help you with building custom source nodes in graphql data layer in order to normalize your data for Gatsby Nodes API as well as main Gatsby configuration files, you might need to get up and running blazing fast. This gatsby starter comes with following goodies:
 
-This starter helps you with the building custom source nodes as per REST API results in order to normalize your data for Gatsby Nodes API as well as main Gatsby configuration files, you might need to get up and running blazing fast.
+a.) Build source nodes as per REST API.
+
+b.) Material-ui with dark and light theme toggle.
+
+c.) Page Creation using File System Route API.
+
+d.) Setup for Github Pages just run:
+
+```shell
+  # Please refer package.json for deploy script and gatsby-config.js for --prefix-paths
+  npm run deploy
+```
+
+e.) github action deployment workflow for automated ci/cd
 
 ## 🚀 Quick start
 
@@ -28,7 +41,7 @@ This starter helps you with the building custom source nodes as per REST API res
     gatsby new gatsby-pokedex https://github.com/thegauravsingh/gatsby-pokedex
     ```
 
-1.  **Start developing...**
+2.  **Start developing...**
 
     Navigate into your new site’s directory and start it up.
 
@@ -37,14 +50,13 @@ This starter helps you with the building custom source nodes as per REST API res
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+3.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
     Open the `gatsby-pokedex` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
 
 ## 🧐 What's inside a Gatsby project?
 
@@ -95,5 +107,3 @@ Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/).
 - **For most developers, recommended start should be [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 - **To dive straight into code samples, head [to documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-
